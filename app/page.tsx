@@ -1,6 +1,8 @@
 import Announcement from "@/components/page-announcement";
 import CustomersReivews from "@/components/page-customers-reviews";
+import Footer from "@/components/page-footer";
 import Header from "@/components/page-header";
+import NewsletterSubsicrption from "@/components/page-newsletter-subscription";
 import ProductBrief from "@/components/page-product-brief";
 import ProductFutures from "@/components/page-product-futures";
 import ProtectionPurchase from "@/components/page-protection-purchase";
@@ -9,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Announcement
-        title="Free shipping on all orders over $40!"
+        title="شحن مجاني لجميع الطلبات التي تزيد عن 200 ريال"
         icon="free-shipping"
       />
       <Header
@@ -25,161 +27,163 @@ export default function Home() {
           "https://assets.lightfunnels.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://assets.lightfunnels.com/account-1/images_library/279edf40-6e98-4c8d-abe1-3aefcf01ce8d.jpg"
         ]}
         is_badge_title_visible={true}
-        title={"Food Storage Containers"}
-        product_price={49.00}
+        title={"حاويات تخزين الطعام"}
+        product_price={450.00}
         is_discount_product={true}
         rate_score={4.8}
         rate_count={10}
-        long_description={"The Freshware Food Storage Container Set is an excellent option for storing a variety of food items. The containers are safe for use in the freezer, microwave and dishwasher, making them easy to care for. The set includes six different containers in various sizes, making it perfect for storing everything from soups and condiments to salads and leftovers."}
-        badge_title={"Trending Product"}
+        long_description={"مجموعة حاويات فريشوير لتخزين الطعام خيار ممتاز لتخزين مجموعة متنوعة من الأطعمة. هذه الحاويات آمنة للاستخدام في الفريزر والميكروويف وغسالة الأطباق، مما يجعلها سهلة العناية. تتضمن المجموعة ست حاويات بأحجام مختلفة، مما يجعلها مثالية لتخزين كل شيء، من الحساء والتوابل إلى السلطات وبقايا الطعام."}
+        badge_title={"المنتج الرائج"}
         discount_rate={0.4}
         discount_percentage={40}
-        short_description={"For a limited time, seize this Black Friday offer and benefit from a discount on this product. Hurry!"}
-        guarantee_detailed_content={"30-day return or refund guarantee. This qualifies you to claim a refund or exchange within 30 days of receiving your items. To submit a claim, contact us at support@yourstore.com"}
-        delivery_detailed_content={"Shipping times vary as we do ship worldwide from different fulfillment centers based on your location. Average shipping time is about 7 to 20 working days. Your tracking number will be updated 3-7 days after your order has been shipped."}
-        return_detailed_content={"We offer a hassle-free return policy, providing peace of mind and flexibility in case you need to return or exchange any item, Contact us within 30 days from receiving your order and we’ll be happy to assist you."}
+        short_description={"لفترة محدودة، اغتنم عرض الجمعة السوداء واستفد من خصم على هذا المنتج. سارع!"}
+        guarantee_detailed_content={"ضمان إرجاع أو استرداد خلال 30 يومًا. هذا يؤهلك لطلب استرداد أو استبدال خلال 30 يومًا من استلامك للمنتجات. لتقديم طلب، تواصل معنا عبر البريد الإلكتروني support@yourstore.com"}
+        delivery_detailed_content={"تختلف أوقات الشحن، فنحن نشحن إلى جميع أنحاء العالم من مراكز توزيع مختلفة حسب موقعك. يتراوح متوسط ​​وقت الشحن بين 7 و20 يوم عمل. سيتم تحديث رقم التتبع الخاص بك بعد 3-7 أيام من شحن طلبك."}
+        return_detailed_content={"نحن نقدم سياسة إرجاع خالية من المتاعب، مما يوفر راحة البال والمرونة في حالة احتياجك إلى إرجاع أو استبدال أي منتج، اتصل بنا في غضون 30 يومًا من استلام طلبك وسنكون سعداء بمساعدتك."}
       />
       <ProtectionPurchase
         is_protection_purchase_visible={true}
         features={[
           {
             "icon": "Truck",
-            "title": "Free Shipping",
-            "short_discreption": "Free delivery $99+"
+            "title": "شحن مجاني",
+            "short_discreption": "شحن مجاني +200 رس"
           },
           {
             "icon": "KeyReturn",
-            "title": "Easy Returns",
-            "short_discreption": "60-day returns"
+            "title": "حق الإسترجاع",
+            "short_discreption": "60 يوم مدة الإسترجاع"
           },
           {
             "icon": "Phone",
-            "title": "Customer Support",
-            "short_discreption": "Mon-Sat, 10am-9pm"
+            "title": "دعم فني",
+            "short_discreption": "دعم فني على مدار 24/7"
           },
           {
             "icon": "ShieldCheck",
-            "title": "Secure Checkout",
-            "short_discreption": "Safe Transactions."
+            "title": "طرق دفع آمنة",
+            "short_discreption": "مشترياتك لدينا بأمان"
           }
         ]}
       />
       <ProductFutures
         is_product_futures_visible={true}
-        main_title="This Product Features"
-        main_short_discreption="If you used this product, share your thoughts with other customers."
+        main_title="مميزات هذا المنتج"
+        main_short_discreption="إذا كنت قد استخدمت هذا المنتج، شارك أفكارك مع العملاء الآخرين."
         futures={[
           {
             "icon": "ShoppingBag",
-            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
-            "title": "Collapsible design"
+            "title": "تصميم قابل للطي",
+            "short_discreption": "تصميم عملي قابل للطي يوفر سهولة في التخزين ويوفر المساحة بطريقة ذكية."
           },
           {
             "icon": "Lightning",
-            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
-            "title": "Ultra stable"
+            "title": "ثبات فائق",
+            "short_discreption": "مصمم ليوفر أقصى درجات الثبات أثناء الاستخدام في مختلف الظروف."
           },
           {
             "icon": "Lock",
-            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
-            "title": "Premium Quality"
+            "title": "جودة ممتازة",
+            "short_discreption": "مصنوع من مواد عالية الجودة لضمان المتانة والأداء الطويل الأمد."
           },
           {
             "icon": "TrolleySuitcase",
-            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
-            "title": "Easy To Clean"
+            "title": "سهل التنظيف",
+            "short_discreption": "يمكن تنظيفه بسهولة دون الحاجة إلى مجهود أو مواد خاصة."
           },
           {
             "icon": "GlobeHemisphereEast",
-            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
-            "title": "Help Save The Planet"
+            "title": "يساهم في حماية الكوكب",
+            "short_discreption": "مصمم بمواد صديقة للبيئة لتقليل التأثير البيئي."
           },
           {
             "icon": "Package",
-            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
-            "title": "Multifunctional"
-          },
+            "title": "متعدد الاستخدامات",
+            "short_discreption": "يتميز بوظائف متعددة تناسب مختلف الاحتياجات اليومية."
+          }
         ]}
       />
       <CustomersReivews
         is_reviews_visible={true}
-        main_title="Customers reviews"
-        main_short_discreption="If you used this product, share your thoughts with other customers."
+        main_title="مراجعات العملاء"
+        main_short_discreption="إذا استخدمت هذا المنتج، شارك رأيك مع باقي العملاء."
         reviews={[
           {
             "review_id": "1",
-            "display_name": "Gerrard",
+            "display_name": "جيرارد",
             "has_purchased": true,
-            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_content": "الصناديق جميلة للغاية وتوفر قيمة رائعة مقابل السعر. وصلت قبل الموعد المتوقع بستة أسابيع!",
             "rate_score": 4.6,
             "time_stamp": new Date('2025-04-12T12:00:00Z')
           },
           {
             "review_id": "2",
-            "display_name": "Gerrard",
+            "display_name": "جيرارد",
             "has_purchased": true,
-            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_content": "الصناديق جميلة للغاية وتوفر قيمة رائعة مقابل السعر. وصلت قبل الموعد المتوقع بستة أسابيع!",
             "rate_score": 4.6,
             "time_stamp": new Date('2025-04-12T12:00:00Z')
           },
           {
             "review_id": "3",
-            "display_name": "Gerrard",
+            "display_name": "جيرارد",
             "has_purchased": true,
-            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_content": "الصناديق جميلة للغاية وتوفر قيمة رائعة مقابل السعر. وصلت قبل الموعد المتوقع بستة أسابيع!",
             "rate_score": 4.6,
             "time_stamp": new Date('2025-04-12T12:00:00Z')
           },
           {
             "review_id": "4",
-            "display_name": "Gerrard",
+            "display_name": "جيرارد",
             "has_purchased": true,
-            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_content": "الصناديق جميلة للغاية وتوفر قيمة رائعة مقابل السعر. وصلت قبل الموعد المتوقع بستة أسابيع!",
             "rate_score": 4.6,
             "time_stamp": new Date('2025-04-12T12:00:00Z')
           },
           {
             "review_id": "5",
-            "display_name": "Gerrard",
+            "display_name": "جيرارد",
             "has_purchased": true,
-            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_content": "الصناديق جميلة للغاية وتوفر قيمة رائعة مقابل السعر. وصلت قبل الموعد المتوقع بستة أسابيع!",
             "rate_score": 4.6,
             "time_stamp": new Date('2025-04-12T12:00:00Z')
           },
           {
             "review_id": "6",
-            "display_name": "Gerrard",
+            "display_name": "جيرارد",
             "has_purchased": true,
-            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_content": "الصناديق جميلة للغاية وتوفر قيمة رائعة مقابل السعر. وصلت قبل الموعد المتوقع بستة أسابيع!",
             "rate_score": 4.6,
             "time_stamp": new Date('2025-04-12T12:00:00Z')
           },
           {
             "review_id": "7",
-            "display_name": "Gerrard",
+            "display_name": "جيرارد",
             "has_purchased": true,
-            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_content": "الصناديق جميلة للغاية وتوفر قيمة رائعة مقابل السعر. وصلت قبل الموعد المتوقع بستة أسابيع!",
             "rate_score": 4.6,
             "time_stamp": new Date('2025-04-12T12:00:00Z')
           },
           {
             "review_id": "8",
-            "display_name": "Gerrard",
+            "display_name": "جيرارد",
             "has_purchased": true,
-            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_content": "الصناديق جميلة للغاية وتوفر قيمة رائعة مقابل السعر. وصلت قبل الموعد المتوقع بستة أسابيع!",
             "rate_score": 4.6,
             "time_stamp": new Date('2025-04-12T12:00:00Z')
           },
           {
             "review_id": "9",
-            "display_name": "Gerrard",
+            "display_name": "جيرارد",
             "has_purchased": true,
-            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_content": "الصناديق جميلة للغاية وتوفر قيمة رائعة مقابل السعر. وصلت قبل الموعد المتوقع بستة أسابيع!",
             "rate_score": 4.6,
             "time_stamp": new Date('2025-04-12T12:00:00Z')
           },
         ]}
       />
+      <NewsletterSubsicrption />
+      <Footer />
     </div>
   );
 }

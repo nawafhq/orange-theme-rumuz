@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Noto_Sans_Arabic } from "next/font/google";
+import { Noto_Kufi_Arabic } from "next/font/google";
 import "./globals.css";
 
-const notoSansArabic = Noto_Sans_Arabic({
+const notoSansArabic = Noto_Kufi_Arabic({
   subsets: ["arabic"],
   variable: "--font-noto-sans-arabic"
 });
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="rtl">
       <body
         className={`${notoSansArabic.variable}`}
       >

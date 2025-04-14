@@ -40,23 +40,24 @@ const CustomersReivews = ({
 
     return (
         <div className='w-full max-w-6xl flex flex-col justify-center items-center space-y-6 lg:mx-auto my-8'>
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center space-y-2'>
                 <h1 className='text-2xl md:text-4xl font-semibold text-center'>{main_title}</h1>
                 <p className='text-gray-500 text-center'>{main_short_discreption}</p>
                 <Button className='rounded-full bg-[#ff563b] cursor-pointer mt-5'>
-                    Write a review
+                    كتابة مراجعة
                 </Button>
             </div>
             <Carousel
                 opts={{
                     align: "start",
+                    direction: "rtl",
                 }}
                 className="w-full lg:px-0 px-3"
             >
                 <CarouselContent>
                     {reviews.map((review, index) => (
                         <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
-                            <div className="p-1">
+                            <div className="p-1" key={review.review_id}>
                                 <Card className='bg-gray-100 border-0'>
                                     <CardContent className="flex flex-col space-y-3 items-center justify-center px-6">
                                         <div className='flex flex-row justify-between items-center w-full'>
@@ -67,7 +68,7 @@ const CustomersReivews = ({
                                         {review.has_purchased && (
                                             <div className='flex flex-row justify-center items-center gap-1'>
                                                 <CheckCircle size={18} weight="duotone" />
-                                                <p className='text-xs font-semibold'>He made a purchase</p>
+                                                <p className='text-xs font-semibold'>قام بشراء المنتج</p>
                                             </div>
                                         )}
                                         <div className='flex flex-row justify-start items-center gap-2 h-5'>
@@ -84,8 +85,6 @@ const CustomersReivews = ({
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
             </Carousel>
         </div>
     )

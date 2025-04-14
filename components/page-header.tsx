@@ -31,22 +31,19 @@ const Header = ({ logo_alt, logo_url }: HeaderProps) => {
         </a>
         <div className='flex-row justify-start items-center space-x-6 md:flex hidden'>
           <button className='font-semibold hover:text-[#ff563b] duration-300 cursor-pointer'>
-            Features
+            مميزات المنتج
           </button>
           <button className='font-semibold hover:text-[#ff563b] duration-300 cursor-pointer'>
-            Reviews
+            المراجعات
           </button>
           <button className='font-semibold hover:text-[#ff563b] duration-300 cursor-pointer'>
-            FAQs
+            النشرة البريدية
           </button>
           <button className='font-semibold hover:text-[#ff563b] duration-300 cursor-pointer'>
-            Contact us
+            تواصل معنا
           </button>
         </div>
-        <div className='flex flex-row justify-start items-center gap-3'>
-          <a href='/cart' className='cursor-pointer'>
-            <ShoppingBag size={32} weight='duotone' className='hover:text-[#ff563b] duration-300'/>
-          </a>
+        <div className='md:hidden flex flex-row justify-start items-center gap-3'>
           <Sheet>
             <SheetTrigger asChild className='flex md:hidden'>
               <button className='cursor-pointer'>
@@ -55,7 +52,7 @@ const Header = ({ logo_alt, logo_url }: HeaderProps) => {
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle>
+                <SheetTitle className='mr-24'>
                   <Image
                     alt={logo_alt}
                     src={logo_url}
@@ -67,16 +64,16 @@ const Header = ({ logo_alt, logo_url }: HeaderProps) => {
               </SheetHeader>
               <div className='flex-col justify-start items-center space-y-6 md:hidden flex px-4'>
                 <button className='font-semibold hover:text-[#ff563b] duration-300 cursor-pointer'>
-                  Features
+                  مميزات المنتج
                 </button>
                 <button className='font-semibold hover:text-[#ff563b] duration-300 cursor-pointer'>
-                  Reviews
+                  المراجعات
                 </button>
                 <button className='font-semibold hover:text-[#ff563b] duration-300 cursor-pointer'>
-                  FAQs
+                  النشرة البريدية
                 </button>
                 <button className='font-semibold hover:text-[#ff563b] duration-300 cursor-pointer'>
-                  Contact us
+                  تواصل معنا
                 </button>
               </div>
             </SheetContent>

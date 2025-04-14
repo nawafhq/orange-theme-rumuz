@@ -69,7 +69,7 @@ const ProductBrief = ({
     return (
         <div className='w-full px-4 py-2 md:px-6 md:py-3 max-w-6xl mx-auto flex md:flex-row flex-col md:justify-between justify-start items-start'>
             <div className='flex flex-col justify-center items-center md:w-1/2 md:p-4 w-full space-y-3 md:space-y-6'>
-                <Carousel className="w-full">
+                <Carousel className="w-full" opts={{ direction: 'rtl' }}>
                     <CarouselContent>
                         {images.map((image, index = selectedIndex) => (
                             <CarouselItem
@@ -99,6 +99,7 @@ const ProductBrief = ({
                 <Carousel
                     opts={{
                         align: "start",
+                        direction: 'rtl'
                     }}
                     className="w-full"
                 >
@@ -121,15 +122,11 @@ const ProductBrief = ({
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <div className='md:flex hidden'>
-                        <CarouselPrevious className='cursor-pointer'/>
-                        <CarouselNext className='cursor-pointer'/>
-                    </div>
                 </Carousel>
             </div>
             <div className='md:w-1/2 w-full md:rounded-2xl flex flex-col md:ml-10 ml-0 md:my-0 my-6 md:space-y-5 space-y-3 h-full py-6'>
                 {is_badge_title_visible && (
-                    <Badge className='flex flex-row justify-start items-center bg-[#ff563b] mr-auto px-2 py-1 rounded-full'>
+                    <Badge className='flex flex-row justify-start items-center bg-[#ff563b] ml-auto px-2 py-1 rounded-full'>
                         <Fire size={16} weight="duotone" className="text-white leading-0" />
                         <h1 className='text-xs font-semibold text-white leading-0'>{badge_title}</h1>
                     </Badge>
@@ -185,22 +182,22 @@ const ProductBrief = ({
                 </div>
                 <h2 className='text-gray-600'>{short_description}</h2>
                 <button className='flex p-3 rounded-full bg-[#ff563b] w-full items-center justify-center text-white font-bold cursor-pointer hover:scale-105 duration-200'>
-                    Buy Now
+                    إشتري الآن
                 </button>
                 <h2 className='text-gray-600'>{long_description}</h2>
                 <Tabs defaultValue="guarantee" className="w-full">
-                    <TabsList className="grid w-full grid-cols-3 h-12">
+                    <TabsList className="grid w-full grid-cols-3 h-12 bg-gray-100" dir='rtl'>
                         <TabsTrigger onClick={() => handleChangeSigment('guarantee')} value="guarantee" className='flex flex-row justify-center items-center gap-1 cursor-pointer'>
                             <ShieldCheck size={26} weight="duotone" />
-                            <p>Guarantee</p>
+                            <p>الضمان</p>
                         </TabsTrigger>
                         <TabsTrigger onClick={() => handleChangeSigment('delivery')} value="delivery" className='flex flex-row justify-center items-center gap-1 cursor-pointer'>
                             <Package size={26} weight="duotone" />
-                            <p>Delivery</p>
+                            <p>الشحن</p>
                         </TabsTrigger>
                         <TabsTrigger onClick={() => handleChangeSigment('return')} value="return" className='flex flex-row justify-center items-center gap-1 cursor-pointer'>
                             <KeyReturn size={26} weight="duotone" />
-                            <p>Return</p>
+                            <p>الإسترجاع</p>
                         </TabsTrigger>
                     </TabsList>
                 </Tabs>

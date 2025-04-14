@@ -27,7 +27,7 @@ const ProductFutures = ({
 
     return (
         <div className='w-full max-w-6xl flex flex-col justify-center items-center space-y-6 lg:mx-auto my-8'>
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center space-y-3'>
                 <h1 className='text-2xl md:text-4xl font-semibold text-center'>{main_title}</h1>
                 <p className='text-gray-500 text-center'>{main_short_discreption}</p>
             </div>
@@ -36,7 +36,7 @@ const ProductFutures = ({
                     const Icon = (PhosphorIcons as any)[feature.icon] || null
 
                     return (
-                        <div key={index} className={`group hover:bg-[#ff553b0e] duration-200 p-6 flex relative flex-col justify-center items-center space-y-2 ${index === 0 ? 'border-r border-r-gray-300' : index === 1 ? 'lg:border-r border-r-gray-300 border-r-0' : index === 2 ? 'border-t border-t-gray-200 lg:border-t-0 border-r border-r-gray-300 lg:border-r-0' : index === 3 ? 'lg:border-r border-r-0 border-r-gray-300 border-t border-t-gray-200' : index === 4 ? 'border-r border-r-gray-300 border-t border-t-gray-200' : 'border-t border-t-gray-200'}`}>
+                        <div key={index} className={`group hover:bg-[#ff553b0e] duration-200 p-6 flex relative flex-col justify-center items-center space-y-2 ${index === 0 ? 'border-l border-l-gray-300' : index === 1 ? 'lg:border-l border-l-gray-300 border-l-0' : index === 2 ? 'border-t border-t-gray-200 lg:border-t-0 border-l border-l-gray-300 lg:border-l-0' : index === 3 ? 'lg:border-l border-l-0 border-l-gray-300 border-t border-t-gray-200' : index === 4 ? 'border-l border-l-gray-300 border-t border-t-gray-200' : 'border-t border-t-gray-200'}`}>
                             {Icon ? (
                                 <Icon size={26} weight="duotone" />
                             ) : (

@@ -29,7 +29,7 @@ const ProtectionPurchase = ({
           <div
             key={index}
             className={`flex flex-row justify-center items-center gap-2 px-3 ${
-              index !== features.length - 1 ? 'lg:border-r border-r-gray-300' : ''
+              index !== features.length - 1 ? 'lg:border-l border-l-gray-300' : ''
             }`}
           >
             {Icon ? (
