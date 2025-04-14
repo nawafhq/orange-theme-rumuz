@@ -122,8 +122,8 @@ const ProductBrief = ({
                         ))}
                     </CarouselContent>
                     <div className='md:flex hidden'>
-                        <CarouselPrevious />
-                        <CarouselNext />
+                        <CarouselPrevious className='cursor-pointer'/>
+                        <CarouselNext className='cursor-pointer'/>
                     </div>
                 </Carousel>
             </div>

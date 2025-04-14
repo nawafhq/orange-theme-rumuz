@@ -1,6 +1,9 @@
 import Announcement from "@/components/page-announcement";
+import CustomersReivews from "@/components/page-customers-reviews";
 import Header from "@/components/page-header";
 import ProductBrief from "@/components/page-product-brief";
+import ProductFutures from "@/components/page-product-futures";
+import ProtectionPurchase from "@/components/page-protection-purchase";
 
 export default function Home() {
   return (
@@ -35,6 +38,147 @@ export default function Home() {
         guarantee_detailed_content={"30-day return or refund guarantee. This qualifies you to claim a refund or exchange within 30 days of receiving your items. To submit a claim, contact us at support@yourstore.com"}
         delivery_detailed_content={"Shipping times vary as we do ship worldwide from different fulfillment centers based on your location. Average shipping time is about 7 to 20 working days. Your tracking number will be updated 3-7 days after your order has been shipped."}
         return_detailed_content={"We offer a hassle-free return policy, providing peace of mind and flexibility in case you need to return or exchange any item, Contact us within 30 days from receiving your order and we’ll be happy to assist you."}
+      />
+      <ProtectionPurchase
+        is_protection_purchase_visible={true}
+        features={[
+          {
+            "icon": "Truck",
+            "title": "Free Shipping",
+            "short_discreption": "Free delivery $99+"
+          },
+          {
+            "icon": "KeyReturn",
+            "title": "Easy Returns",
+            "short_discreption": "60-day returns"
+          },
+          {
+            "icon": "Phone",
+            "title": "Customer Support",
+            "short_discreption": "Mon-Sat, 10am-9pm"
+          },
+          {
+            "icon": "ShieldCheck",
+            "title": "Secure Checkout",
+            "short_discreption": "Safe Transactions."
+          }
+        ]}
+      />
+      <ProductFutures
+        is_product_futures_visible={true}
+        main_title="This Product Features"
+        main_short_discreption="If you used this product, share your thoughts with other customers."
+        futures={[
+          {
+            "icon": "ShoppingBag",
+            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
+            "title": "Collapsible design"
+          },
+          {
+            "icon": "Lightning",
+            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
+            "title": "Ultra stable"
+          },
+          {
+            "icon": "Lock",
+            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
+            "title": "Premium Quality"
+          },
+          {
+            "icon": "TrolleySuitcase",
+            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
+            "title": "Easy To Clean"
+          },
+          {
+            "icon": "GlobeHemisphereEast",
+            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
+            "title": "Help Save The Planet"
+          },
+          {
+            "icon": "Package",
+            "short_discreption": "Ac bibendum lacinia nostra netus ultrices pretium aliquet molestie vestibulum neque eget convallis aenean gravida tempus diam lectus mauris ullamcorper nibh.",
+            "title": "Multifunctional"
+          },
+        ]}
+      />
+      <CustomersReivews
+        is_reviews_visible={true}
+        main_title="Customers reviews"
+        main_short_discreption="If you used this product, share your thoughts with other customers."
+        reviews={[
+          {
+            "review_id": "1",
+            "display_name": "Gerrard",
+            "has_purchased": true,
+            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_score": 4.6,
+            "time_stamp": new Date('2025-04-12T12:00:00Z')
+          },
+          {
+            "review_id": "2",
+            "display_name": "Gerrard",
+            "has_purchased": true,
+            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_score": 4.6,
+            "time_stamp": new Date('2025-04-12T12:00:00Z')
+          },
+          {
+            "review_id": "3",
+            "display_name": "Gerrard",
+            "has_purchased": true,
+            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_score": 4.6,
+            "time_stamp": new Date('2025-04-12T12:00:00Z')
+          },
+          {
+            "review_id": "4",
+            "display_name": "Gerrard",
+            "has_purchased": true,
+            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_score": 4.6,
+            "time_stamp": new Date('2025-04-12T12:00:00Z')
+          },
+          {
+            "review_id": "5",
+            "display_name": "Gerrard",
+            "has_purchased": true,
+            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_score": 4.6,
+            "time_stamp": new Date('2025-04-12T12:00:00Z')
+          },
+          {
+            "review_id": "6",
+            "display_name": "Gerrard",
+            "has_purchased": true,
+            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_score": 4.6,
+            "time_stamp": new Date('2025-04-12T12:00:00Z')
+          },
+          {
+            "review_id": "7",
+            "display_name": "Gerrard",
+            "has_purchased": true,
+            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_score": 4.6,
+            "time_stamp": new Date('2025-04-12T12:00:00Z')
+          },
+          {
+            "review_id": "8",
+            "display_name": "Gerrard",
+            "has_purchased": true,
+            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_score": 4.6,
+            "time_stamp": new Date('2025-04-12T12:00:00Z')
+          },
+          {
+            "review_id": "9",
+            "display_name": "Gerrard",
+            "has_purchased": true,
+            "rate_content": "The boxes are exceptionally beautiful and offer great value for the price. They arrived a remarkable 6 weeks ahead of the expected delivery date.",
+            "rate_score": 4.6,
+            "time_stamp": new Date('2025-04-12T12:00:00Z')
+          },
+        ]}
       />
     </div>
   );
